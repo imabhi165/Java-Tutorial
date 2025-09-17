@@ -5,8 +5,11 @@ public class datatypes {
         System.out.println("Data types tutorial!!");
         System.out.println("-------------------------------");
 
-        //Date types ->1.Primitive Data type 2.Non-Primitive Data Types
-        //Primitive Data types has * datatypes ->
+        //Date types ->
+        // 1.Primitive Data Type
+        // 2.Non-Primitive Data Type
+
+        //Primitive Data types has 8 datatypes ->
         //1.byte -> 1 byte (for Smaller Number)
         //2.short -> 2 bytes (Medium Number)
         //3.int -> 4 bytes -> Big whole number
@@ -33,5 +36,23 @@ public class datatypes {
         System.out.println("6.Accurate Decimal is(double) : "+MoreAccurateDecNum);
         System.out.println("7.Character is : "+name);
         System.out.println("8.Condition is : "+condition);
+
+
+        // Non - Primitive Data types ->
+        // 1.strings - "Hello"
+        //2.Arrays -> {1,2,3,4}
+        //3.Classes - Students,Books,Car
+        //4.Interfaces - like contracts for classes
+        //5.Objects - Real thing created for class.
+
+
+        String str = "Hello, I am string";
+        System.out.println("String is : "+str);
+
+        int[] arr = {1,2,3,4,5};
+        for(int i=0;i<5;i++){
+            System.out.print(arr[i]);
+        }
+
     }
 }
