@@ -6,7 +6,10 @@ public class operators {
         System.out.println("------------------------------------");
         System.out.println("Operators and Variables Tutorials!!");
         System.out.println("------------------------------------");
-//      Variables -> A variable is a container used to store values.
+        /*----------------------------------------------------------      
+        Variables -> A variable is a container used to store values.
+        ----------------------------------------------------------- 
+         */
         int age = 25;  //here age is variable
         float price = 99.99f; //price is variable
         char grade = 'A'; //grade is variable
