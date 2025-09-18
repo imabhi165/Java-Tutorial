@@ -1,18 +1,10 @@
 package Basics;
 
+import static java.lang.System.exit;
 import java.util.Scanner;
 
-import static java.lang.System.exit;
-import static java.lang.System.setOut;
+public class First {
 
-
-
-
-
-
-
-
-public class first {
     public static void main(String[] args) {
 //        System.out.println("Hello World!!");
 
@@ -23,19 +15,12 @@ public class first {
 //        for(int i=0;i<size;i++){
 //            System.out.println("The Element of Array is : "+array[i]);
 //        }
-
         //Sum of Array Elements
-
 //        int sum=0;
 //        for(int i=0;i<size;i++){
 //            sum = sum + array[i];
 //        }
 //        System.out.println("The Sum of Array Element is : "+sum);
-
-
-
-
-
         System.out.println("*******************      MENU ITEMS     ***********************");
         System.out.println("1.Sum");
         System.out.println("2.Subtraction");
@@ -48,21 +33,23 @@ public class first {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
-                int a,b;
+                int a, 
+                b;
                 System.out.print("Please Enter Two Numbers : ");
                 a = scanner.nextInt();
-                b=scanner.nextInt();
-                int result = a+b;
-                System.out.println("The Sum of is: "+result );
+                b = scanner.nextInt();
+                int result = a + b;
+                System.out.println("The Sum of is: " + result);
                 break;
 
             case 2:
-                int x,y;
+                int x, 
+                y;
                 System.out.print("Please Enter Two Numbers : ");
                 x = scanner.nextInt();
-                y=scanner.nextInt();
-                int sub = x-y;
-                System.out.println("The Sub is: "+sub );
+                y = scanner.nextInt();
+                int sub = x - y;
+                System.out.println("The Sub is: " + sub);
                 break;
 
             case 3:
@@ -83,4 +70,3 @@ public class first {
         }
     }
 }
-
