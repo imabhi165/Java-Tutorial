@@ -33,8 +33,8 @@ public class First {
         int choice = scanner.nextInt();
         switch (choice) {
             case 1:
-                int a, 
-                b;
+                int a,
+                 b;
                 System.out.print("Please Enter Two Numbers : ");
                 a = scanner.nextInt();
                 b = scanner.nextInt();
@@ -43,8 +43,8 @@ public class First {
                 break;
 
             case 2:
-                int x, 
-                y;
+                int x,
+                 y;
                 System.out.print("Please Enter Two Numbers : ");
                 x = scanner.nextInt();
                 y = scanner.nextInt();
