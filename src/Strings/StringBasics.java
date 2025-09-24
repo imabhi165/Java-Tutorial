@@ -49,7 +49,7 @@ public class StringBasics {
         System.out.println(str4.indexOf('z')); //if character not found then it will
         System.out.println("From here CompareTo() method Started....!!");
         System.out.println(str4.compareTo(str5));
-        
+
         /*
         * Important String Methods
         * str.length();
@@ -62,19 +62,17 @@ public class StringBasics {
         * str.endWith("ing");
         * str.replace("Java", "C++");
         * str.substring(5);
-        
-        
+         */
         String str = "Java Programming";
-         System.out.println(str.length());
-         System.out.println(str.charAt(3));
-         System.out.println(str.toUpperCase());
-         System.out.println(str.toLowerCase());
-         System.out.println(str.contains("gram"));
-         System.out.println(str.startsWith("java"));
-         System.out.println(str.endsWith("ing"));
-         System.out.println(str.replace("Java", "C++"));
-         System.out.println(str.substring(5));
- */
+        System.out.println(str.length());
+        System.out.println(str.charAt(3));
+        System.out.println(str.toUpperCase());
+        System.out.println(str.toLowerCase());
+        System.out.println(str.contains("gram"));
+        System.out.println(str.startsWith("java"));
+        System.out.println(str.endsWith("ing"));
+        System.out.println(str.replace("Java", "C++"));
+        System.out.println(str.substring(5));
 
     }
 }
