@@ -56,7 +56,7 @@ public class StringBasics {
         * str.charAt();
         * str.toUpperCase();
         * str.toLowerCase();
-        * str.concat("Msg");
+        * str.concat(str2);
         * str.contains("Msg");
         * str.startsWith("java");
         * str.endWith("ing");
