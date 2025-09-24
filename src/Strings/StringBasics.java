@@ -38,7 +38,7 @@ public class StringBasics {
          */
         //4. indexOf() and compareTo()
         //-----------------------------
-        String str4 = "Hello";
+        String str4 = sc.nextLine();
         int size = str4.length();
         String str5 = "Hello!!";
         System.out.println("String Length: " + size);
@@ -49,6 +49,7 @@ public class StringBasics {
         System.out.println(str4.compareTo(str5));
         
         
+
 
     }
 }
