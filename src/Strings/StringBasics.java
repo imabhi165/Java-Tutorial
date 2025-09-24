@@ -1,0 +1,46 @@
+
+import java.util.Scanner;
+
+public class StringBasics {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        // --------------------------------------------
+        /*
+        //1.next()
+        System.out.println("Enter a String: ");
+        String str = sc.next();
+        System.out.println("Entered String is: " + str);
+         */
+        // ---------------------------------------------
+        //2.nextLine()
+        /*
+        System.out.println("Enter a String: ");
+        String str2 = sc.nextLine();
+        System.out.println("Entered String is: " + str2);
+         */
+        // ---------------------------------------------
+
+        /*
+        //3.charAt() and length()
+        //-------------------------------------------
+        String str3 = "Hello";
+        int len = str3.length();
+        System.out.println("String Length: " + len);
+
+        //If i want to print signle character of my StringArray -> for that we have to use charAt() functions.
+        System.out.println(str3.charAt(0));
+        System.out.println(str3.charAt(1));
+        System.out.println(str3.charAt(2));
+        System.out.println(str3.charAt(3));
+        System.out.println(str3.charAt(4));
+        //-------------------------------------------
+         */
+        //4. indexOf() and compareTo()
+        //-----------------------------
+        String str4 = "Hello";
+        int size = str4.length();
+        
+
+    }
+}
