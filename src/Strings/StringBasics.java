@@ -38,7 +38,7 @@ public class StringBasics {
          */
         //4. indexOf() and compareTo()
         //-----------------------------
-        String str4 = "Hello";
+        String str4 = sc.nextLine();
         int size = str4.length();
         System.out.println("String Length: " + size);
         System.out.println(str4.indexOf('e'));
@@ -46,6 +46,7 @@ public class StringBasics {
         System.out.println(str4.indexOf('o'));
         System.out.println(str4.indexOf('z')); //if character not found then it will
         
+
 
     }
 }
