@@ -40,11 +40,14 @@ public class StringBasics {
         //-----------------------------
         String str4 = "Hello";
         int size = str4.length();
+        String str5 = "Hello!!";
         System.out.println("String Length: " + size);
         System.out.println(str4.indexOf('e'));
         System.out.println(str4.indexOf('l'));
         System.out.println(str4.indexOf('o'));
         System.out.println(str4.indexOf('z')); //if character not found then it will
+        System.out.println(str4.compareTo(str5));
+        
         
 
     }
