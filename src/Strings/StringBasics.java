@@ -103,6 +103,7 @@ public class StringBasics {
         // Example
         StringBuffer sb = new StringBuffer("Hi");
         sb.append(" Everyone");
+        sb.reverse();
         System.out.println(sb);
 
 
