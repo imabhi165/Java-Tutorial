@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Kumar || Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: url('https://ik.imagekit.io/3raxli730/bg.jpg?updatedAt=1751051982959') no-repeat center center fixed;
+      background-size: cover;
+    }
+    nav {
+      background: rgba(0, 188, 212, 0.9);
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    header {
+      text-align: center;
+      padding: 30px;
+      background: rgba(224, 247, 250, 0.8);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    header.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    header img {
+      width: 150px;
+      height: 150px; /* added height for circle */
+      border-radius: 50%; /* perfect circle */
+      object-fit: cover;  /* prevents oval stretching */
+      border: 3px solid #00bcd4;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+    }
+    header h2 {
+      margin: 5px 0;
+      font-weight: normal;
+      color: #555;
+    }
+    section, footer {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    section.show, footer.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h3 {
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 5px;
+      color: #00796b;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      background: #f1f8e9;
+      margin: 5px 0;
+      padding: 8px;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+    }
+    a {
+      color: #00796b;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="photo.jpg" alt="Naseeha Nafrin NM">
+    <h1>Naseeha Nafrin NM</h1>
+    <h2>IT Student | Web & UI/UX Developer | Embedded & Drone Tech Explorer</h2>
+  </header>
+
+  <section id="about">
+    <h3>About Me</h3>
+    <p> I’m Naseeha Nafrin NM,a 2nd-year B.Tech IT student at Kumaraguru College of Technology, Coimbatore. I’m a curious learner passionate about exploring technologies beyond academics.
+I love building web applications and am keen on full stack development and UI/UX design. I’ve done mini projects in these areas to strengthen my skills. 
+I’ve also explored embedded systems and am currently researching drone technology, combining my interests in coding and hardware to create impactful solutions.</p>
+  </section>
+
+  <section id="skills">
+    <h3>Skills</h3>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript (learning)</li>
+      <li>Python (learning)</li>
+      <li> C programming</li>
+      <li>Embedded Systems Basics</li>
+      <li>UI/UX Tools: Figma, Canva, GIMP</li>
+      <li>Tools: Visual Studio Code, GitHub</li>
+      <li>Soft Skills: Quick Learner, Problem Solving, Presentation</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h3>Projects</h3>
+    <ul>
+      <li>Totalizer – Dynamic total calculation (HTML, CSS, JS)</li>
+      <li>Smart Door Buzzer – IoT concept integration</li>
+      <li>Google Translate API Integration – Multilingual converter</li>
+      <li>Food App Interface – Figma prototype</li>
+      <li>DHT & ESP32 – Real-time sensor display</li>
+      <li>Drone Propeller Simulation – Arduino project</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h3>Experience</h3>
+    <ul>
+      <li>Full Stack Dev Intern – Novitech R&D Pvt Ltd,Coimbatore(2024)</li>
+      <li>Intra Ideathon'24-KCT, Coimbatore 
+      <li>Hackathon Participant – Bannari Amman Institute of Technology,Sathyamangalam,Erode(2025)</li>
+      <li>Automotive Embedded Systems Project –Coimbatore Institue of Technology,Coimbatore(2025)</li>
+      <li>UI/UX Traineeship – Mayyam,Coimbatore(2025)</li>
+      <li>Social Internship – KSI under Kumaraguru College of Technology,Coimbatore (Healthcare domain)</li>
+    </ul>
+  </section>
+
+  <footer id="contact">
+    <h3>Let's Connect & Build Together!</h3>
+    <p>Looking forward to collaborating and learning with amazing people.</p>
+    <p><a href="https://www.linkedin.com/in/naseeha-nafrin-nm-274745327">LinkedIn</a></p>
+    <p><a href="mailto:nasinaf2006@gmail.com">Email Me</a></p>
+    <p><a href="https://github.com/">GitHub</a></p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('header, section, footer');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
