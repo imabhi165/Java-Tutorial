@@ -4,6 +4,6 @@ public class Demo {
     }
 
     // void main{
-    //     IO.println("hello New features!!");
+    //     IO.readLine("hello New features!!");
     // }
 }
