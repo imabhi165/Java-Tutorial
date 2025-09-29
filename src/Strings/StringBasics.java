@@ -4,22 +4,8 @@ import java.util.Scanner;
 public class StringBasics {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // --------------------------------------------
-        /*
-        //1.next()
-        System.out.println("Enter a String: ");
-        String str = sc.next();
-        System.out.println("Entered String is: " + str);
-         */
-        // ---------------------------------------------
-        //2.nextLine()
-        /*
-        System.out.println("Enter a String: ");
-        String str2 = sc.nextLine();
-        System.out.println("Entered String is: " + str2);
-         */
-        // ---------------------------------------------
+        try (Scanner sc = new Scanner(System.in)) {
+        }
 
         /*
         //3.charAt() and length()
