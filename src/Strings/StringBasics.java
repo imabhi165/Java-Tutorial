@@ -20,7 +20,7 @@ public class StringBasics {
         System.out.println(str3.charAt(2));
         System.out.println(str3.charAt(3));
         System.out.println(str3.charAt(4));
-        //-------------------------------------------
+        //-------------------------------------------                                                                                           
        
         //4. indexOf() and compareTo()
         //-----------------------------
