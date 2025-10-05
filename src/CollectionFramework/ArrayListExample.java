@@ -35,5 +35,7 @@ public class ArrayListExample {
       System.out.println("-----------set method-------");
       list.set(0, 20); //it will replace the previous value by 20;
       System.out.println(list);
+
+      List<Integer> list1 = list.of(1,2,3,4,5);
     }
 }
