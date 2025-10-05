@@ -27,6 +27,23 @@ public class StudentRecord {
                 for (Student student : students) {
                     System.out.println(student);
                 }
+                
+                class Student {
+                    private String name;
+                    private String id;
+                    private String grade;
+                
+                    public Student(String name, String id, String grade) {
+                        this.name = name;
+                        this.id = id;
+                        this.grade = grade;
+                    }
+                
+                    @Override
+                    public String toString() {
+                        return "Name: " + name + ", ID: " + id + ", Grade: " + grade;
+                    }
+                }
             } else if (choice == 3) {
                 System.out.println("Exiting...");
                 break;
